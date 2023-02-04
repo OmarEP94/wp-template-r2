@@ -1,16 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Import CSS -->
-    <link rel="stylesheet" href="./css/app.css">
-    <title>WP Template Base</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
+    <link rel="stylesheet" href="./css/app.css" />
+    <!-- Icono -->
+    <link rel="icon" href="/img/icono.gif" />
+    <title>Reyes Remisse | Inicio</title>
+  </head>
+  <body>
+    <!-- Seccion Cabecera -->
+    <section
+      class="m-auto container-fluid text-center"
+      style="
+        background: rgb(255, 168, 0);
+        background: linear-gradient(
+          180deg,
+          rgba(161, 106, 4) 0%,
+          rgb(255, 168, 0, 1) 100%
+        );
+      "
+    >
+      <div class="container">
+        <div class="row py-1">
+          <div class="col-lg-2 col-md-4 col-sm-12 m-auto">
+            <img
+              class="my-1 m-auto"
+              src="/img/icono.gif"
+              alt="icono"
+              width="60px"
+            />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 m-auto">
+            <h3 class="m-auto text-white my-2">Reyes Remisse</h3>
+          </div>
+          <div class="col-md-4 col-sm-12 m-auto my-auto">
+            <a
+              class="btn mx-4 my-2"
+              style="background-color: rgb(255, 255, 255)"
+            >
+              <p class="text-warning fw-bolder mx-5 m-auto fs-6" href="#">
+                Reserva aquí
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Barra de navegaciòn -->
+    <section class="bg-body">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/img/icono.gif"
+                alt="Logo"
+                width="30"
+                height="30"
+                class="d-inline-block align-text-top"
+              />
+              Reyes Remisse
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Reserva
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Lugar A</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lugar B</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lugar C</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Servicios</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <a class="btn bg-warning text-light fs-6" href="#"
+                  >Registrate</a
+                >
+              </div>
+              <!--<form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form> -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- Slider -->
+    <section>
+      <div>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.ovationthemes.com/demos/adventure-trekking-camp/wp-content/themes/adventure-trekking-camp/assets/images/slides/slide1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.ovationthemes.com/demos/adventure-trekking-camp/wp-content/themes/adventure-trekking-camp/assets/images/slides/slide2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.ovationthemes.com/demos/adventure-trekking-camp/wp-content/themes/adventure-trekking-camp/assets/images/slides/slide3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div></div>
     <!-- Import JS -->
     <script src="./js/index.js" type="module"></script>
-</body>
+  </body>
 </html>
